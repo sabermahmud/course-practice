@@ -29,20 +29,20 @@ numbers = [5,6,11,12,98, 5]
 find: 25
 output: 0
 */
-const numbers = [5, 6, 11, 11, 98, 5];
+// const numbers = [5, 6, 11, 11, 98, 5];
 
-function countOccurrences(numbers, targetNumber) {
-    let count = 0;
-    for (const number of numbers) {
+// function countOccurrences(numbers, targetNumber) {
+//     let count = 0;
+//     for (const number of numbers) {
 
-        if (number === targetNumber) {
-            count++
-        }
-    }
-    return count
-}
-const totalSimilarNumber = countOccurrences(numbers, 5)
-console.log(totalSimilarNumber)
+//         if (number === targetNumber) {
+//             count++
+//         }
+//     }
+//     return count
+// }
+// const totalSimilarNumber = countOccurrences(numbers, 5)
+// console.log(totalSimilarNumber)
 
 
 
@@ -51,11 +51,23 @@ console.log(totalSimilarNumber)
 ### Task-3:
 Write a function to count the number of vowels in a string.
 */
+const vowels = ["a", "e", "i", "o", "u"];
+const string = "lorem ipsum dolor, sit amet consectetur adipisicing elit. ";
+   
 
-
-
-
-
+const countVowel = (string) => {
+     let count = 0;
+    for(const letter of string){
+        for(const vowel of vowels){
+            if(letter === vowel){
+            count ++
+            }
+        }
+    }
+    return count
+}
+const totalVowel = countVowel (string);
+console.log(totalVowel)
 /*
 ---
 ### Task-4:
