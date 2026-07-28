@@ -51,23 +51,23 @@ output: 0
 ### Task-3:
 Write a function to count the number of vowels in a string.
 */
-const vowels = ["a", "e", "i", "o", "u"];
-const string = "lorem ipsum dolor, sit amet consectetur adipisicing elit. ";
-   
+// const vowels = ["a", "e", "i", "o", "u"];
+// const string = "lorem ipsum dolor, sit amet consectetur adipisicing elit. ";
 
-const countVowel = (string) => {
-     let count = 0;
-    for(const letter of string){
-        for(const vowel of vowels){
-            if(letter === vowel){
-            count ++
-            }
-        }
-    }
-    return count
-}
-const totalVowel = countVowel (string);
-console.log(totalVowel)
+
+// const countVowel = (string) => {
+//      let count = 0;
+//     for(const letter of string){
+//         for(const vowel of vowels){
+//             if(letter === vowel){
+//             count ++
+//             }
+//         }
+//     }
+//     return count
+// }
+// const totalVowel = countVowel (string);
+// console.log(totalVowel)
 /*
 ---
 ### Task-4:
@@ -77,8 +77,21 @@ I am learning Programming to become a programmer
 sample-output: Programming
 */
 
+// const string = "I am learning Programming to become a programmer"
+// function findLongestWord(string) {
 
+//     const words = string.split(" ");
+//     let longest = words[0];
+//     for (const word of words) {
+//         if (word.length > longest.length) {
+//             longest = word;
+//         }
+//     }
 
+//     return largest;
+// }
+// const longestWord = findLongestWord(string);
+// console.log(longestWord)
 
 
 /*
@@ -86,6 +99,15 @@ sample-output: Programming
 ### Task-5:
 Generate a random number between 10 to 20.
 */
+
+function generateRandomNumber(){
+
+    const random = Math.floor(Math.random()*11) + 10;
+    console.log(random)
+    return random
+
+}
+generateRandomNumber();
 
 
 
@@ -98,6 +120,7 @@ Find the lowest number in the array below.
 `const heights2 = [167, 190, 120, 165, 137];`
 */
 
+function 
 
 
 
