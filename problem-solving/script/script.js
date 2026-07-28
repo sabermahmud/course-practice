@@ -100,14 +100,14 @@ sample-output: Programming
 Generate a random number between 10 to 20.
 */
 
-function generateRandomNumber(){
+// function generateRandomNumber(){
 
-    const random = Math.floor(Math.random()*11) + 10;
-    console.log(random)
-    return random
+//     const random = Math.floor(Math.random()*11) + 10;
+//     console.log(random)
+//     return random
 
-}
-generateRandomNumber();
+// }
+// generateRandomNumber();
 
 
 
@@ -117,10 +117,19 @@ generateRandomNumber();
 ### Task -6: 
 Find the lowest number in the array below.
 <br>
-`const heights2 = [167, 190, 120, 165, 137];`
+`const numbers = [167, 190, 120, 165, 137];`
 */
-
-function 
+// const numbers = [167, 190, 120, 165, 137];
+// function findLowestNumber (numbers){
+//     let lowest = numbers[0];
+//     for(const number of numbers){
+//         if(number < lowest){
+//             lowest = number;
+//         }
+//     } 
+//     return lowest 
+// }
+// console.log(findLowestNumber(numbers))
 
 
 
@@ -132,6 +141,17 @@ Find the friend with the smallest name.
 `const heights2 = ['rahim', 'robin', 'rafi', 'ron', 'rashed'];`
 */
 
+const friendsNames = ['rahim', 'robin', 'rafi', 'ron', 'rashed'];
+    let smallestName = friendsNames[0]
+function findSmallestName (friendsNames){
+    for (const name of friendsNames){
+        if(name.length < smallestName.length ){
+            smallestName = name;
+        }
+    }
+    return smallestName
+}
+console.log(findSmallestName(friendsNames))
 
 
 
