@@ -2,40 +2,39 @@
 A-Type
 A-01: Array থেকে Largest ও Smallest বের করো।
 */
-const numbers = [45, 12, '89', 3, 67];
+const numbers = [45, 12, 89, 3, 67];
 
 function getTarget(numbers) {
 
 
-    let arrayValidation = Array.isArray(numbers);
-
-    if (arrayValidation === false) {
-        return "input is not an array"
+    if(!Array.isArray(numbers)){
+        return "invalid"
     }
-    else {
+
+   
         let largestNumber = numbers[0];
         let smallestNumber = numbers[0];
         for (const number of numbers) {
-            if (typeof(number) !== "number") {
+            if (typeof (number) !== "number") {
                 return "invalid"
 
             }
-            else {
-                if (number > largestNumber) {
-                    largestNumber = number;
-                }
 
-                if (number < smallestNumber) {
-                    smallestNumber = number;
-                }
+            if (number > largestNumber) {
+                largestNumber = number;
             }
+
+            if (number < smallestNumber) {
+                smallestNumber = number;
+            }
+
         }
 
         return {
             largest: largestNumber,
             smallest: smallestNumber
         }
-    }
+    
 
 }
 console.log(getTarget(numbers));
